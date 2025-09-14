@@ -19,7 +19,7 @@ import nextjs from "../assets/Nextjs.png";
 import nodejs from "../assets/Nodejs.png";
 import express from "../assets/express-js.png";
 import mongodb from "../assets/Mongodb.png";
-import python from "../assets/python.png";
+import python from "../assets/Python.png";
 import firebase from "../assets/Firebase.png";
 
 import MagicCursor from "../components/ui/MagicCursor";
