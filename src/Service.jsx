@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import Stars from "./Stars";
 import SplashCursor from "./components/ui/SplashCursor";
 import MagicCursor from "./components/ui/MagicCursor";
-
 import FullstackImg from "./assets/fullstack.png";
 import AIMLImg from "./assets/AIML.png";
 import CloudImg from "./assets/cloud.png";
