@@ -32,7 +32,7 @@ const projectsData = [
     features: "50% increase in user retention",
   },
   {
-    title: "Smart Traffic Management System",
+    title: "Smart Traffic Management",
     img: TrafficImg,
     domain: "IoT & AI",
     year: "2024",
@@ -52,7 +52,7 @@ const projectsData = [
     features: "25% improved trading efficiency",
   },
   {
-    title: "Educational Learning Management",
+    title: "Learning Management",
     img: EducationImg,
     domain: "EdTech",
     year: "2024",
