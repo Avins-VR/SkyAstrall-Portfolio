@@ -3,15 +3,22 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  base: "./", // ✅ ensures relative paths so assets resolve correctly on Vercel
+  // ✅ Use relative paths for assets (important for Vercel/GitHub Pages)
+  base: "./",  
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "src"),
     },
   },
   build: {
-    outDir: "dist",   // ✅ Vercel expects this
-    emptyOutDir: true // ✅ cleans old files before each build
+    outDir: "dist",        // ✅ Vercel uses this as default
+    emptyOutDir: true,     // ✅ Cleans old builds
+    sourcemap: false,      // ⚡ Optional: set true for debugging, false for production
+    chunkSizeWarningLimit: 1000, // ✅ Avoids warning for big bundles
+  },
+  server: {
+    port: 5173,            // ✅ Default Vite port
+    open: true,            // ✅ Auto-open browser when running `npm run dev`
   },
 });
